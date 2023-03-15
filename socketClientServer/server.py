@@ -10,6 +10,7 @@ with socket.socket() as socket1:
     conn, addr = socket1.accept()
 
     with conn:
+        
         print("The Connection is successful...")
 
         while True:

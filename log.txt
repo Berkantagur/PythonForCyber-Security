@@ -1,0 +1,6 @@
+google.com is harmful
+Date:<built-in method now of type object at 0x00007FFA650F9990>
+login.cu.edu.tr is not harmful
+Date:<built-in method now of type object at 0x00007FFA650F9990>
+login.cu.edu.tr is not harmful
+Date:<built-in method now of type object at 0x00007FFA650F9990>

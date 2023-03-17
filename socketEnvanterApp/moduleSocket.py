@@ -3,7 +3,7 @@ import socket
 portList = []
 bannerList = []
 
-file = open("ip.txt", "r")
+file = open("socketEnvanterApp/ip.txt", "r")
 ips = file.read()
 file.close()
 
@@ -21,8 +21,17 @@ for ip in ips.splitlines():
             bannerList.append(str(banner))
             portList.append(str(port))
             socket1.close()
+            
             print(port)
             print(banner)
+
+            if "SSH" in str(banner):
+                print("The system may be Linux or Network Device...")
+                log = str(ip) + "\n"
+                file = open("Linux.txt", "a")
+                file.write(log)
+                file.close()
+
 
         except:
             pass

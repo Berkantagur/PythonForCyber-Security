@@ -12,3 +12,11 @@ header = {"Cookie": "scurity = low; PHPSESSID = ....................."}
 for i in content.split("\n"):
     print(i)
     url = "http://10.10.10.10" + str(i)
+    result = requests.get(url = url, headers = header)
+
+    if "200" in str (result.status_code):
+        print("There is a file or directory", i)
+
+    else:
+        print("There is not a file or directory", i)
+
